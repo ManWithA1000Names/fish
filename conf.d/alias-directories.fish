@@ -1,0 +1,6 @@
+alias cdd "cd ~/Downloads"
+alias cdp "cd ~/Pictures"
+alias cdc "cd ~/.config"
+alias cdv "cd ~/Videos"
+alias cde "cd ~/Empty"
+alias cdev "cd ~/Github"
