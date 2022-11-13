@@ -28,3 +28,13 @@ function remove_var
     set_color normal
   end
 end
+
+function d
+  if test -z "$argv[1]"
+    return
+  end
+  command "$argv[1]" &> /dev/null &
+  set pid $last_pid
+  disown $pid
+  echo "$pid"
+end
