@@ -33,7 +33,7 @@ alias pz peco_select_z
 alias b "bat"
 alias g "git"
 alias vim "nvim"
-alias size "du -sH"
+alias size "du -sh"
 alias dnf "sudo dnf"
 alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
