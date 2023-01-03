@@ -14,5 +14,5 @@ function ports
 end;
 
 function clear-empty
-  rm -rf ~/Empty/
+  rm -rf ~/Empty/*
 end
