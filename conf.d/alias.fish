@@ -30,6 +30,11 @@ alias ph peco_select_history
 alias pz peco_select_z
 ### End Peco
 
+###----------end----------###
+
+#############################
+###   Random programs     ###
+############################%
 alias b "bat"
 alias g "git"
 alias vim "nvim"
@@ -38,3 +43,14 @@ alias dnf "sudo dnf"
 alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
 ###----------end----------###
+
+###################
+###   Server    ###
+###################
+set -x SERVER "192.168.1.199"
+alias server "ssh server@$SERVER"
+alias server-ping "ssh server@$SERVER echo test > /dev/null 2> /dev/null"
+alias server-shutdown "ssh server@$SERVER -t sudo shutdown now"
+alias server-reboot "ssh server@$SERVER -t sudo reboot now"
+alias server-sudo "ssh server@$SERVER -t sudo"
+###-----end-----###
