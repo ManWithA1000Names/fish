@@ -12,3 +12,7 @@ end
 function ports
    sudo lsof -i -P -n | grep LISTEN
 end;
+
+function clear-empty
+  rm -rf ~/Empty/
+end
