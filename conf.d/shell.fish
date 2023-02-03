@@ -30,10 +30,10 @@ function remove_var
 end
 
 function d
-  if test -z "$argv[1]"
+  if test -z "$argv"
     return
   end
-  command "$argv[1]" &> /dev/null &
+  command $argv &> /dev/null &
   set pid $last_pid
   disown $pid
   echo "$pid"
