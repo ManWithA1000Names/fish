@@ -42,6 +42,7 @@ alias size "du -sh"
 alias dnf "sudo dnf"
 alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
+alias open "xdg-open"
 ###----------end----------###
 
 ###################
