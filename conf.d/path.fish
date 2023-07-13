@@ -13,11 +13,12 @@ function path
   echo $PATH
 end
 
+# TODO: This doesn't work.
 function remove_from_path
   for path in $argv
     set abs_path (realpath $path)
     if set index (contains $abs_path $fish_user_paths)
-      set -U --erase fish_user_paths[$index]
+      set -U -e fish_user_paths[$index]
     else
       set_color red
       echo "$abs_path is not present in \$fish_user_paths"
