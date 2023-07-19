@@ -40,6 +40,7 @@ function now
   if string match --regex '/$' "$argv[1]" > /dev/null
     cd "$argv[1]"
   else
+    cd (dirname "$argv[1]")
     vim "$argv[1]"
   end
 end
