@@ -18,6 +18,8 @@ function ex
       tar xzf $argv[1]
     else if string match "*.zip" $argv[1]
       unzip $argv[1]
+    else if string match "*.vsix" $argv[1]
+      unzip $argv[1]
     else if string match "*.Z" $argv[1]
       uncompress $argv[1]
     else if string match "*.7z" $argv[1]
