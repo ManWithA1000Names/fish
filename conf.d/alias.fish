@@ -30,6 +30,9 @@ alias ph peco_select_history
 alias pz peco_select_z
 ### End Peco
 
+### Nix
+alias ned "nix develop .#editor"
+
 ###----------end----------###
 
 #############################
