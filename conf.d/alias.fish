@@ -1,9 +1,9 @@
 ###############################
 ###   Configuration Files   ###
 ###############################
-alias frc "vim ~/.config/fish/config.fish"
-alias grc "vim ~/.gitconfig"
-alias vrc "vim ~/.config/nvim/init.lua"
+alias frc "$EDITOR ~/.config/fish/config.fish"
+alias grc "$EDITOR ~/.gitconfig"
+alias vrc "$EDITOR ~/.config/nvim/init.lua"
 
 alias src "source ~/.config/fish/config.fish && source ~/.config/fish/conf.d/* && source ~/.config/fish/functions/*"
 ###----------end------------###
@@ -40,9 +40,7 @@ alias ned "nix develop .#editor"
 ############################%
 alias b "bat"
 alias g "git"
-alias vim "nvim"
 alias size "du -sh"
-alias dnf "sudo dnf"
 alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
 alias open "xdg-open"

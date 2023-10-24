@@ -10,5 +10,20 @@ alias cdp "cder ~/Pictures"
 alias cdc "cder ~/.config"
 alias cdv "cder ~/Videos"
 alias cde "cder ~/Empty"
-alias cdev "cder ~/Github"
 alias cdoc "cder ~/Documents"
+
+function cdev
+  if test -z "$argv[1]"
+    cd (projects random-path)
+  else
+    set dir (projects path "$argv[1]")
+    if test "$status" != "0"
+      echo "Failed to find a project or cateogry with the name: '$argv[1]'"
+      return 1
+    else
+        cd "$dir"
+    end
+  end
+end
+
+

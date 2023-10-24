@@ -3,7 +3,7 @@ function gg
     echo "gg - commit and push all changes."
     echo "USAGE: gg <commit message>"
   else
-    git add (git root)
+    git add (git rev-parse --show-toplevel)
     git commit -m "$argv[1]"
     git push
   end
