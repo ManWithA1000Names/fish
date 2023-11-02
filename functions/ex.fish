@@ -30,6 +30,8 @@ function ex
       tar xf $argv[1]
     else if string match "*.tar.zst" $argv[1]
       unzstd $argv[1]
+    else if string match "*.gpg" $argv[1]
+      gpg $argv[1]
     else
       echo "$argv[1] is an unidentified compression format."
     end
