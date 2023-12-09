@@ -32,6 +32,7 @@ alias pz peco_select_z
 
 ### Nix
 alias ned "nix develop .#editor"
+alias ns "nix develop .#shell"
 
 ###----------end----------###
 
