@@ -18,7 +18,6 @@ function cdev
   else
     set dir (projects path "$argv[1]")
     if test "$status" != "0"
-      echo "Failed to find a project or cateogry with the name: '$argv[1]'"
       return 1
     else
         cd "$dir"
