@@ -14,7 +14,7 @@ alias cdoc "cder ~/Documents"
 
 function cdev
   if test -z "$argv[1]"
-    cd (projects random-path)
+    cd (projects random --path)
   else
     set dir (projects path "$argv[1]")
     if test "$status" != "0"
