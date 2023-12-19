@@ -1,13 +1,3 @@
-###############################
-###   Configuration Files   ###
-###############################
-alias frc "$EDITOR ~/.config/fish/config.fish"
-alias grc "$EDITOR ~/.gitconfig"
-alias vrc "$EDITOR ~/.config/nvim/init.lua"
-
-alias src "source ~/.config/fish/config.fish && source ~/.config/fish/conf.d/* && source ~/.config/fish/functions/*"
-###----------end------------###
-
 #############################
 ###   Program Shortcuts   ###
 #############################
@@ -33,6 +23,9 @@ alias pz peco_select_z
 ### Nix
 alias ned "nix develop .#editor"
 alias ns "nix develop .#shell"
+
+### Mpv
+alias mpv "mpv --hwdec"
 
 ###----------end----------###
 
