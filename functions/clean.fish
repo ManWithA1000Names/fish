@@ -1,4 +1,5 @@
 function clean
-  rm -rf ./* 2> /dev/null
-  rm -rf ./.* 2> /dev/null
+  for entry in (ls -a | awk '{print $1}')
+    rm -rf "$entry"
+  end
 end
