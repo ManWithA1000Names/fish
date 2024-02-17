@@ -10,10 +10,10 @@ function clone
       git clone $argv[1]
     end
   else
-    if test -n "$argv[2]"
-      gh repo clone $argv[1] -- --depth $argv[2]
-    else
+    if test "$argv[2]" = "full"
       gh repo clone $argv[1]
+    else
+      gh repo clone $argv[1] -- --depth 1
     end
   end
 end
