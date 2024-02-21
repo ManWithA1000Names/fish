@@ -39,6 +39,7 @@ alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
 alias open "xdg-open"
 alias o "xdg-open"
+alias p "projects"
 ###----------end----------###
 
 ###################
