@@ -21,8 +21,8 @@ alias pz peco_select_z
 ### End Peco
 
 ### Nix
-alias ned "nix develop .#editor"
-alias ns "nix develop .#shell"
+alias ned "nix develop -c \$EDITOR ."
+alias ns "nix develop -c \$SHELL"
 
 ### Mpv
 alias mpv "mpv --hwdec"
