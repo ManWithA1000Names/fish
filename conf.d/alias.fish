@@ -27,6 +27,9 @@ alias aria2-resume 'aria2c --continue=true (echo "magnet:?xt=urn:btih:$(xxd -p -
 alias ned "nix develop -c \$EDITOR ."
 alias ns "nix develop -c \$SHELL"
 
+# Vim
+alias vs '$EDITOR +:terminal +:startinsert'
+
 ### Mpv
 alias mpv "mpv --hwdec"
 
