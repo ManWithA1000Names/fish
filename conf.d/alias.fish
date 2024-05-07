@@ -21,7 +21,11 @@ alias pz peco_select_z
 ### End Peco
 
 ### aria2
-alias aria2-resume 'aria2c --continue=true (echo "magnet:?xt=urn:btih:$(xxd -p -seek 10 -l 20 ./*.aria2)")'
+function aria2-resume
+  set thing (xxd -p -seek 10 -l 20 ./*.aria2)
+  aria2c --continue=true (echo "magnet:?xt=urn:btih:$thing")
+  set -e thing
+end
 
 ### Nix
 alias ned "nix develop -c \$EDITOR ."
