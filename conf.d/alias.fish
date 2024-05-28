@@ -28,7 +28,7 @@ function aria2-resume
 end
 
 ### Nix
-alias ned "nix develop -c \$EDITOR ."
+# alias ned "nix develop -c \$EDITOR ."
 alias ns "nix develop -c \$SHELL"
 
 # Vim
