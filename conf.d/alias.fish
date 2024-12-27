@@ -21,10 +21,14 @@ alias pz peco_select_z
 ### End Peco
 
 ### aria2
-alias aria2-resume 'aria2c --continue=true (echo "magnet:?xt=urn:btih:$(xxd -p -seek 10 -l 20 ./*.aria2)")'
+function aria2-resume
+  set thing (xxd -p -seek 10 -l 20 ./*.aria2)
+  aria2c --continue=true (echo "magnet:?xt=urn:btih:$thing")
+  set -e thing
+end
 
 ### Nix
-alias ned "nix develop -c \$EDITOR ."
+# alias ned "nix develop -c \$EDITOR ."
 alias ns "nix develop -c \$SHELL"
 
 # Vim
@@ -41,7 +45,6 @@ alias mpv "mpv --hwdec"
 alias b "bat"
 alias g "git"
 alias size "du -sh"
-alias github "gh repo view --web"
 alias ccopy "xclip -selection clipboard"
 alias open "xdg-open"
 alias o "xdg-open"
