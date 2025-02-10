@@ -54,10 +54,8 @@ alias p "projects"
 ###################
 ###   Server    ###
 ###################
-set -x SERVER "192.168.1.199"
-alias server "ssh server@$SERVER"
-alias server-ping "ssh server@$SERVER echo test > /dev/null 2> /dev/null"
-alias server-shutdown "ssh server@$SERVER -t sudo shutdown now"
-alias server-reboot "ssh server@$SERVER -t sudo reboot now"
-alias server-sudo "ssh server@$SERVER -t sudo"
+set -x SERVER "192.168.1.12"
+alias server "ssh user@$SERVER"
+alias server-shutdown "ssh user@$SERVER -t shutdown now"
+alias server-reboot "ssh user@$SERVER -t reboot"
 ###-----end-----###
