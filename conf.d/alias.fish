@@ -30,6 +30,7 @@ end
 ### Nix
 # alias ned "nix develop -c \$EDITOR ."
 alias ns "nix develop -c \$SHELL"
+alias nc "nix develop -c"
 
 # Vim
 alias vs '$EDITOR +:terminal +:startinsert'
