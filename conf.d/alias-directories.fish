@@ -11,7 +11,7 @@ alias cdc "cder ~/.config"
 alias cdv "cder ~/Videos"
 alias cde "cder ~/Empty"
 alias cdoc "cder ~/Documents"
-alias chdd "cder /mnt/hdd"
+alias cone "cder ~/Drives/OneDrive/"
 
 function cdev
   if test -z "$argv[1]"

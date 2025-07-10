@@ -1,5 +1,5 @@
 # OneDrive
-alias m-onedrive "rclone mount OneDrive: ~/Drives/OneDrive --vfs-cache-mode full --daemon"
+alias m-onedrive "rclone mount onedrive: ~/Drives/OneDrive --vfs-cache-mode full --daemon"
 alias um-onedrive "fusermount -u ~/Drives/OneDrive" 
 
 # NextCloud
