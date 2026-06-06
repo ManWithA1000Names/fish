@@ -50,7 +50,7 @@ alias p "projects"
 ###################
 ###   Server    ###
 ###################
-set -x SERVER "192.168.1.12"
+set -x SERVER "atalanta.local"
 alias server "ssh user@$SERVER"
 alias server-shutdown "ssh user@$SERVER -t shutdown now"
 alias server-reboot "ssh user@$SERVER -t reboot"

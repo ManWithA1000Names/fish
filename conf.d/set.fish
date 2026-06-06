@@ -1,6 +1,6 @@
 set -x EDITOR "vix"
 
-set -x NOX_EDITOR "zed"
+set -x NOX_EDITOR "zeditor"
 set -x NOX_EDITOR_ARGS "."
 
 set -x NOX_TERM_EDITOR "vix"
