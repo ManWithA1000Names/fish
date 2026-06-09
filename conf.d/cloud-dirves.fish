@@ -1,23 +1,15 @@
-# OneDrive
-alias m-onedrive "rclone mount onedrive: ~/Drives/OneDrive --vfs-cache-mode full --daemon"
-alias um-onedrive "fusermount -u ~/Drives/OneDrive" 
+alias m-onedrive "mkdir -p ~/.onedrive && rclone mount onedrive: ~/.onedrive --vfs-cache-mode full --vfs-refresh --dir-cache-time 24h --onedrive-delta --vfs-cache-max-age 24h --tpslimit 2 --tpslimit-burst 0 --daemon"
+alias um-onedrive "fusermount -u ~/.onedrive" 
 
-# NextCloud
-alias m-nextcloud "rclone mount NextCloud: ~/Drives/NextCloud --vfs-cache-mode full --daemon"
-alias um-nextcloud "fusermount -u ~/Drives/NextCloud"
-
-# 
-alias m-googledrive "rclone mount GoogleDrive: ~/Drives/GoogleDrive --daemon"
-alias um-googledrive "fusermount -u ~/Drives/GoogleDrive"
+alias m-googledrive "mkdir -p ~/.googledrive && rclone mount GoogleDrive: ~/.googledrive --daemon"
+alias um-googledrive "fusermount -u ~/.googledrive"
 
 function m-all
   m-onedrive
-  m-nextcloud
   m-googledrive
 end
 
 function um-all
   um-onedrive
-  um-nextcloud
   um-googledrive
 end
