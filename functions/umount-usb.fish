@@ -1,7 +1,7 @@
 function umount-usb
-  if test "$1" = ""
-    sudo umount -l /home/user/.usb/
+  if test "$argv[1]" = ""
+    sudo umount -l "/home/$USER/.usb/"
   else
-    sudo umount -l "$2"
+    sudo umount -l "$argv[1]"
   end
 end
