@@ -42,8 +42,8 @@ alias b "bat"
 alias g "git"
 alias size "du -sh"
 alias ccopy "xclip -selection clipboard"
-alias open "xdg-open"
-alias o "xdg-open"
+# alias open "xdg-open"
+# alias o "xdg-open"
 alias p "projects"
 ###----------end----------###
 
