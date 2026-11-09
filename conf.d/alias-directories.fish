@@ -11,19 +11,4 @@ alias cdc "cder ~/.config"
 alias cdv "cder ~/Videos"
 alias cde "cder ~/Empty"
 alias cdoc "cder ~/Documents"
-alias cone "cder ~/Drives/OneDrive/"
-
-function cdev
-  if test -z "$argv[1]"
-    cd (projects random --path)
-  else
-    set dir (projects path "$argv[1]")
-    if test "$status" != "0"
-      return 1
-    else
-        cd "$dir"
-    end
-  end
-end
-
-
+alias cdev "cder ~/Development"
